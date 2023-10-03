@@ -1,9 +1,19 @@
-version: '3'
-services:
-  web:
-    image: nginx:latest  # Replace with the appropriate web server image if not using Nginx
-    ports:
-      - "80:80"
-    volumes:
-      - ./your-website-folder:/usr/share/nginx/html  # Mount your website files into the container
-      
+name: Deploy Website
+
+on:
+  push:
+    branches:
+      - main  # Adjust to your main branch name
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Deploy Files
+        run: |
+          # Replace the destination directory with your actual directory
+          cp -r ./* /var/www/html/
