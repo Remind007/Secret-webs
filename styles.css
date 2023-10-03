@@ -1,0 +1,97 @@
+/* Reset some default browser styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background color to the body */
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Style the header section */
+header {
+    background-color: #7289da;
+    color: white;
+    padding: 20px;
+}
+
+/* Style the profile picture */
+header img {
+    width: 100px; /* Adjust the size as needed */
+    border-radius: 50%; /* Makes the image circular */
+}
+
+/* Style the section headers */
+h1, h2 {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+/* Style the content sections */
+.creation, .moderator-admin {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the list items in sections */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Style links to look like buttons */
+a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #7289da;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+a.button:hover {
+    background-color: #5466a7;
+}
+
+/* Style the footer section */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+/* Style the copyright text */
+.copyright {
+    margin-bottom: 10px;
+}
+
+/* Style the contact list in the footer */
+.contact-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-list li {
+    margin-bottom: 10px;
+}
+
+.contact-list a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-list a:hover {
+    color: #7289da;
+}
